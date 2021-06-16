@@ -23,8 +23,27 @@ const app = new Vue({
 				{
 					nombre: 'Codo a Codo BA',
 					periodo:'2021 Abril - En curso',
-					titulo: 'Capacitación Full Stack Developer'
+					titulo: 'Capacitación Full Stack Dev.'
 				}],
+				projects:[
+					{
+						link:'https://infinite-basin-92269.herokuapp.com/',
+						name:'Parcialitos'
+					},
+					{
+						link:'https://matetutor.netlify.app/',
+						name:'Maquetado'
+					},
+					{
+						link:'https://matchfichas.netlify.app/',
+						name:'Fichas'
+					},
+					{
+						link:'https://github.com/aylen27s',
+						name:'+GitHub'
+					}
+
+				],
 				skills:[
 					{
 						icon:["fas fa-laptop-code"],
@@ -63,7 +82,7 @@ const app = new Vue({
 						}]
 					}],
 				laboral:[
-					{ 
+					{
 						lugar:'Banco Itaú - Ramos Mejia',
 						puesto:'Greeter',
 						descripcion:'Práctica profesional',
