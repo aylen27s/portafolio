@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  outline: none;
+}
+
+.profile {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile .conteiner {
+  width: 80%;
+  height: 80%;
+  background: #f699ff;
+  position: relative;
+}
+.profile .conteiner .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  top: calc(50% - 150px);
+}
+.profile .conteiner .name {
+  position: absolute;
+  left: 30%;
+}
+
+.title {
+  text-align: center;
+  color: #b800ca;
+  padding: 10px 30px;
+  width: 250px;
+  border-radius: 30px;
+  position: relative;
+}
+.title:before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+  background: #f699ff;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+}
+
+.formacion {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formacion h1 {
+  margin-bottom: 50px;
+}
+.formacion .cards {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+}
+.formacion .cards div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  background: #b800ca;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.skills .bodyskills {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.skills section {
+  width: 200px;
+  height: 300px;
+  border: solid 2px #e800ff;
+  background: trasnparent;
+  position: relative;
+  padding: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills section:before {
+  content: "";
+  position: absolute;
+  background: #FCDFFF;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  right: 10px;
+  top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 0.3em rgba(0, 0, 0, 0.2);
+}
+.skills section h3 {
+  color: #e800ff;
+}
+.skills section .icon {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background: #e800ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.skills section .items {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aylen</title>
+	<script src="https://kit.fontawesome.com/1204f54e70.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="./estilos.css">
+</head>
+<body>
+	<div id="root">
+		<div class="profile">
+			<div class="conteiner">
+				<div class="avatar"></div>
+				<div class="name">
+					<h1>{{personal.name}}</h1>
+					<h1>M. C.</h1>
+				</div>
+				<div>
+					<p>{{getEdad()}} años</p>
+					<p>{{personal.city}}</p>
+					<p>{{personal.pais}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="formacion">
+			<h1 class="title">Formación</h1>
+			<div class="cards">
+				<div v-for="item in formacion">
+					<small>{{item.periodo}}</small>
+					<h3>{{item.titulo}}</h3>
+					<p>{{item.nombre}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="skills">
+			<h1 class="title">Habilidades</h1>
+			<div class="bodyskills">
+				<section v-for="sk in skills">
+					<div class="icon"><i v-bind:class="sk.icon"></i></div>
+					<div>
+						<div class="items" v-for="item of sk.stack">
+							<h3>{{item.tech}}</h3>
+							<p>{{item.rango}}</p>
+						</div>
+					</div>
+					<div>
+						<div class="items" v-for="item of sk.soft">
+							<p>{{item}}</p>
+						</div>
+					</div>
+					<div>
+						<div class="items"  v-for="item of sk.idioma">
+							<h3>{{item.lengua}}</h3>
+							<p>{{item.nivel}}</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
