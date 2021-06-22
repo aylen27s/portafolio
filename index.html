@@ -15,14 +15,21 @@
 							<div class="code"> < </div>
 							<!-- <div class="avatar"></div> -->
 							<div class="name">
-								<h1>{{personal.name}}_M_C</h1>
+								<h1>Aylen_M_C</h1>
 							</div>
 
 							<div class="code"> /> </div>
 					</div>
 					<div class="p-info">
-							<p>{{getEdad()}} años</p>
-							<p>{{personal.city}}, {{personal.pais}}</p>
+						<div v-for="icon in iconInfo">
+							<i  v-bind:class="icon.icon" @click="viewInfo"></i>
+							<div v-bind:class="infoClass">
+								{{icon.content}}
+							</div>
+						</div>
+						
+							<!-- <p>{{getEdad()}} años</p>
+							<p>{{personal.city}}, {{personal.pais}}</p> -->
 					</div>
 			</div>
 		</div>

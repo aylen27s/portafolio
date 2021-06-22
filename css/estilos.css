@@ -16,36 +16,47 @@
   justify-content: center;
   align-items: center;
 }
-  .profile .conteiner {
-    width: 80%;
-    height: 80%;
+.profile .conteiner {
+  width: 80%;
+  height: 80%;
 /*     background: #f699ff; */
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
 /*     position: relative; */
-   }
-   .head{
-     font-size:2.5em;
-     color:#b800ca;
-     animation: deslizar 1s ease-out forwards;
-   }
-   .head .code{
-     font-weight:600;
-     padding:0px 20px;
-     font-size:1.5em;
-     color:#282828;
-   }
-   .p-info{
-     padding:20px 0px;
-     width:30%;
-     justify-content:space-around;
-   }
-    .profile .conteiner div{
-      display:flex;
-      align-items:center;
-    }
+ }
+ .head{
+   font-size:2.5em;
+   color:#b800ca;
+   animation: deslizar 1s ease-out forwards;
+ }
+ .head .code{
+   font-weight:600;
+   padding:0px 20px;
+   font-size:1.5em;
+   color:#282828;
+ }
+ .p-info{
+   margin:20px 0px;
+   border-radius: 150px;
+   justify-content:space-around;
+   background:#FCDFFF;
+ }
+ .p-info i{
+   padding:10px;
+   border-radius:100%;
+   cursor:pointer;
+   color:#f7aaff;
+ }
+ .p-info i.check{
+   background:#b800ca;
+   color:#FCDFFF;
+ }
+  .profile .conteiner div{
+    display:flex;
+    align-items:center;
+  }
 
 .title {
   text-align: center;
@@ -102,7 +113,7 @@
       border:solid 1px #f7aaff;
       /*background: #f7aaff;*/
       border-radius: 5px;
-      color:#;
+      /* color:#; */
     }
 .proyectos{
   display:flex;
@@ -176,7 +187,7 @@
     padding: 40px;
     border-radius: 5px;
     display: flex;
-    justify-content: space-around;
+/*     justify-content: space-around; */
     align-items: center;
   }
     .skills section:before {
@@ -227,4 +238,44 @@
      0%{opacity:0%; transform:translateX(-100px);}
      100%{opacity:100%; transform: translateX(0px);}
    }
-/*# sourceMappingURL=estilos.css.map */
+@media (max-width:400px)
+{
+  .profile h1, .profile .code{
+      font-size:0.7em;
+  }
+
+  .profile .code{
+    padding:0;
+  }
+
+  .seccion-b{
+    width:100;
+    padding:0px;
+  }
+}
+
+@media (max-width:650px){
+  .seccion-b{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .bodyskills{
+    flex-direction:column;
+  }
+  .bodyskills section{
+    margin: 20px 0px;
+    min-width:200px;
+    width:100%;
+  }
+}
+
+@media (min-width:650px) and (max-width:950px){
+  .seccion-b{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .bodyskills section{
+    margin: 20px 0px;
+    margin:10px;
+  }
+}

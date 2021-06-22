@@ -2,6 +2,19 @@ const app = new Vue({
 			el:'#root',
 			data:{
 				//iconos:["fas fa-laptop-code","fas fa-user-check","fas fa-comment-dots"],
+				iconInfo:[
+				{
+					icon: 'fas fa-globe-americas',
+					content:'globo'
+				},
+				{
+					icon: 'fas fa-envelope',
+					content:'mail'
+				},
+				{
+					icon: 'fas fa-moon',
+					content:'data'
+				}],
 				personal:
 				{
 					name:'Aylen',
@@ -96,6 +109,10 @@ const app = new Vue({
 					const anio = this.personal.bdate.getFullYear()
 					return actual - anio
 				}
+				// viewInfo(){
+
+				// }
+
 			}
 
 		})
