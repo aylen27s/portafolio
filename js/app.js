@@ -1,19 +1,26 @@
 const app = new Vue({
 			el:'#root',
 			data:{
+				checkIcon : false,
 				//iconos:["fas fa-laptop-code","fas fa-user-check","fas fa-comment-dots"],
 				iconInfo:[
 				{
+					id: 0,
 					icon: 'fas fa-globe-americas',
-					content:'globo'
+					content:'Buenos Aires, Argentina',
+					state: false
 				},
 				{
+					id: 1,
 					icon: 'fas fa-envelope',
-					content:'mail'
+					content:'ailen27mc@gmail.com',
+					state:false
 				},
 				{
+					id: 2,
 					icon: 'fas fa-moon',
-					content:'data'
+					content:'',
+					state:false
 				}],
 				personal:
 				{
@@ -93,14 +100,6 @@ const app = new Vue({
 							lengua:'Ingles técnico',
 							nivel:'Básico para lectura'
 						}]
-					}],
-				laboral:[
-					{
-						lugar:'Banco Itaú - Ramos Mejia',
-						puesto:'Greeter',
-						descripcion:'Práctica profesional',
-						periodo:'2019 Agosto - Noviembre',
-						info:'Asistencia al cliente en el uso de canales digitales(cajeros automáticos, banca por internet y banca telefónica)'
 					}]
 			},
 			methods:{
@@ -108,10 +107,14 @@ const app = new Vue({
 					let actual = new Date().getFullYear()
 					const anio = this.personal.bdate.getFullYear()
 					return actual - anio
+				},
+				viewInfo(id){
+					for (i of this.iconInfo)
+					{
+						i.id == id ? i.state = !i.state : i.state = false
+						console.log(i.state)
+					}
 				}
-				// viewInfo(){
-
-				// }
 
 			}
 
