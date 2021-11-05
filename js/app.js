@@ -47,7 +47,7 @@ const app = new Vue({
 				}],
 				projects:[
 					{
-						link:'https://infinite-basin-92269.herokuapp.com/',
+						link:'https://parcialitosapp.herokuapp.com/',
 						name:'Parcialitos'
 					},
 					{
