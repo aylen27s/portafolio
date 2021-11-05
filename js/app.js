@@ -51,7 +51,7 @@ const app = new Vue({
 						name:'Parcialitos'
 					},
 					{
-						link:'https://darpormassonrisas.herokuapp.com/',
+						link:'https://darpmsweb.herokuapp.com/',
 						name:'ONG DARpms'
 					},
 					{
@@ -78,7 +78,7 @@ const app = new Vue({
 						},
 						{
 							tech:'Javascript',
-							rango:'Intermedio'
+							rango:'Basico'
 						},
 						{
 							tech:'Python',
