@@ -14,6 +14,8 @@ const app = new Vue({
 					id: 1,
 					icon: 'fas fa-envelope',
 					content:'ailen27mc@gmail.com',
+					asunto:'Vi tu portafolio',
+					msg:'¡Hola Aylen! me pongo en contacto con vos ...',
 					state:false
 				},
 				{
