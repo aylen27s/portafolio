@@ -26,6 +26,11 @@
 							<i v-bind:id="item.id" v-bind:class="[{check : item.state}, item.icon]" @click="viewInfo(item.id)"></i>
 							<div class="infoClass" v-bind:class="{ active : item.state }">
 								<p v-if="item.id != 2">{{item.content}}</p>
+								<p v-else-if="item.id == 1">
+									<a href="mailto:"{{item.content}}"?subject="{{item.asunto}}"&body="{{item.msg}}>
+									{{item.content}}
+									</a>
+								</p>
 								<p v-else>{{getEdad()}} años</p>
 							</div>
 						</div>
