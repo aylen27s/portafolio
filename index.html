@@ -25,7 +25,6 @@
 							<i v-bind:id="item.id" v-bind:class="[{check : item.state}, item.icon]" @click="viewInfo(item.id)"></i>
 							<div class="infoClass" v-bind:class="{ active : item.state }">
 								<p v-if="item.id === 1">
- 									
 									prueba
 								</p>
 								<p v-else-if="item.id === 2">{{getEdad()}} años</p>
