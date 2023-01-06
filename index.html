@@ -27,9 +27,12 @@
 							<div class="infoClass" v-bind:class="{ active : item.state }">
 								<p v-if="item.id != 2">{{item.content}}</p>
 								<p v-else-if="item.id == 1">
-									<a href="mailto:"{{item.content}}"?subject="{{item.asunto}}"&body="{{item.msg}}>
+<!-- 									<a href="mailto:"{{item.content}}
+									   "?subject="{{item.asunto}}
+									   "&body="{{item.msg}}>
 									{{item.content}}
-									</a>
+									</a> -->
+									prueba
 								</p>
 								<p v-else>{{getEdad()}} años</p>
 							</div>
