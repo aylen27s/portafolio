@@ -19,8 +19,8 @@ const app = new Vue({
 				{
 					id: 2,
 					icon: 'fas fa-moon',
-					content:'',
-					state:false
+					content: '',
+					state: false
 				}],
 				personal:
 				{
@@ -39,21 +39,16 @@ const app = new Vue({
 					nombre: 'UTN FRBA',
 					periodo:'2020 - En curso',
 					titulo: 'Ingenieria en Electrónica',
-				},
-				{
-					nombre: 'Codo a Codo BA',
-					periodo:'2021 Abril - En curso',
-					titulo: 'Capacitación Full Stack Dev.'
 				}],
 				projects:[
-					{
-						link:'https://parcialitosapp.herokuapp.com/',
-						name:'Parcialitos'
-					},
-					{
-						link:'https://darpmsweb.herokuapp.com/',
-						name:'ONG DARpms'
-					},
+					// {
+					// 	link:'https://parcialitosapp.herokuapp.com/',
+					// 	name:'Parcialitos'
+					// },
+					// {
+					// 	link:'https://darpmsweb.herokuapp.com/',
+					// 	name:'ONG DARpms'
+					// },
 					{
 						link:'https://matchfichas.netlify.app/',
 						name:'Fichas'
@@ -98,7 +93,7 @@ const app = new Vue({
 						},
 						{
 							lengua:'Ingles técnico',
-							nivel:'Básico para lectura'
+							nivel:'Nivel 1 Universidad'
 						}]
 					}]
 			},

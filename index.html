@@ -24,8 +24,8 @@
 						<div v-for="item in iconInfo">
 							<i v-bind:id="item.id" v-bind:class="[{check : item.state}, item.icon]" @click="viewInfo(item.id)"></i>
 							<div class="infoClass" v-bind:class="{ active : item.state }">
-								<p v-if="item.id === 2">{{getEdad()}} años</p>
-								<p v-else>{{item.content}}</p>
+								<p v-if="item.id === 2"> {{getEdad()}} años </p>
+								<p v-else> {{item.content}} </p>
 							</div>
 						</div>
 					</div>
@@ -75,7 +75,7 @@
 					<div>
 						<div class="items"  v-for="item of sk.idioma">
 							<h3>{{item.lengua}}</h3>
-							<p>{{item.nivel}}</p>
+							<small>{{item.nivel}}</small>
 						</div>
 					</div>
 				</section>
