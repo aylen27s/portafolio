@@ -82,7 +82,7 @@ const app = new Vue({
 					},
 					{
 						icon:[,"fas fa-user-check"],
-						soft:['Responsable','Buen trabajo en equipo','Comunicativa']
+						soft:['Responsable','Buen trabajo en equipo','Buena comunicación']
 					},
 					{
 						icon:["fas fa-comment-dots"],
